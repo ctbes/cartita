@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una Invitación Muy Especial</title>
+    <title>Para mi bb</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;700&display=swap');
 
         :root {
-            --primary-color: #ff8a8a; /* Rosa suave principal */
-            --secondary-color: #ff5252; /* Rosa más intenso */
-            --envelope-bg: #fde4e4; /* Fondo del sobre y parte trasera */
-            --letter-bg: rgba(255, 240, 245, 0.98); /* Fondo de la carta, ligeramente transparente */
-            --text-dark: #4a4a4a; /* Texto principal oscuro */
-            --text-light: #777; /* Texto secundario más claro */
-            --heart-color: #ff4757; /* Color de los corazones de explosión */
-            --button-no-bg: #b0b0b0; /* Fondo del botón "No quiero" */
-            --button-no-hover-bg: #999999; /* Hover del botón "No quiero" */
+            --primary-color: #ff8a8a;
+            --secondary-color: #ff5252;
+            --envelope-bg: #fde4e4;
+            --letter-bg: rgba(255, 240, 245, 0.98);
+            --text-dark: #4a4a4a;
+            --text-light: #777;
+            --heart-color: #ff4757;
+            --button-no-bg: #b0b0b0;
+            --button-no-hover-bg: #999999;
         }
 
         body {
@@ -59,7 +59,6 @@
             display: block;
         }
         
-        /* Vista del Sobre */
         #envelopeView {
             background-color: var(--envelope-bg);
             padding: 50px 30px;
@@ -76,7 +75,6 @@
         }
 
 
-        /* Vista de la Carta */
         .photo-frame-container { 
             display: flex;
             justify-content: center;
@@ -88,7 +86,7 @@
             height: auto;
             object-fit: contain;
             border-radius: 10px;
-            margin: 10px; /* Agrega espacio fuera del borde de la imagen */
+            margin: 10px;
         }
 
         .date-info {
@@ -172,7 +170,6 @@
         }
 
 
-        /* Vista Final (Parte Trasera) */
         #finalView {
             background-color: var(--envelope-bg); 
             padding: 40px 35px; 
@@ -199,11 +196,10 @@
             height: auto;
             object-fit: contain;
             border-radius: 10px;
-            margin: 10px; /* Agrega espacio fuera del borde de la imagen */
+            margin: 10px;
         }
 
 
-        /* Explosión de Corazones */
         .heart-explosion {
             position: fixed; 
             font-size: 1.6rem; 
@@ -219,7 +215,6 @@
             100% { transform: translate(var(--translateXEnd), var(--translateYEnd)) scale(0.4) rotate(var(--rotateEnd)); opacity: 0; }
         }
 
-        /* Corazones de Fondo */
         #backgroundHeartsContainer {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; z-index: -1; 
